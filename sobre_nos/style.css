@@ -175,268 +175,51 @@ li {
 }
 
 /* ==================================================
-   HOME
-================================================== */
+MAIN
+==================================================== */
 
-.section-home img {
-    width: 100%;
-    min-height: 350px;
-    object-fit: cover;
-}
-
-/* .banner_mobile {
-    display: none;
-}
-
-.banner_desktop {
-    display: block;
-} */
-
-/* ==================================================
-   WHATSAPP
-================================================== */
-
-.whatsapp {
-
-    width: 60px;
-    height: 60px;
-
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #25D366;
-
-    transition: var(--transition);
-}
-
-.whatsapp i {
-    font-size: 1.6rem;
-    color: white;
-}
-
-.whatsapp:hover {
-    transform: scale(1.1);
-}
-
-/* ==================================================
-   PLANOS
-================================================== */
-
-.section-plans {
-
-    padding: 80px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 60px;
-}
-
-.planos {
-
-    width: 100%;
-
+main {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 35px;
-}
-
-.card-plano {
-
-    width: 350px;
-
-    padding: 35px 25px;
-
-    position: relative;
-
-    border-radius: 24px;
-
-    background: var(--bg-card);
-
-    border: 1px solid var(--border-primary);
-
-    transition: var(--transition);
-}
-
-.card-plano:hover {
-
-    transform: translateY(-10px);
-
-    box-shadow: var(--shadow-primary);
-}
-
-.plano-gold {
-    border: 1px solid #60A5FA;
-}
-
-.nome-plano {
-
-    position: absolute;
-    top: -18px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    padding: 10px 30px;
-
-    border-radius: 999px;
-
-    background: var(--gradient-primary);
-
-    color: white;
-    font-weight: bold;
-}
-
-.preco {
-
-    margin-top: 20px;
-
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-    gap: 5px;
-}
-
-.preco span {
-
-    font-size: 2.4rem;
-    font-weight: bold;
-
-    color: white;
-}
-
-.valor-extra {
-
-    margin-top: 15px;
-
-    text-align: center;
-}
-
-.btn-contratar {
-
-    width: 100%;
-
-    margin-top: 30px;
-    padding: 15px;
-
-    border: none;
-    border-radius: 999px;
-
-    background: var(--gradient-primary);
-
-    color: white;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: var(--transition);
-}
-
-.btn-contratar:hover {
-
-    transform: scale(1.03);
-
-    box-shadow: var(--shadow-primary);
-}
-
-.beneficios {
-
-    margin-top: 30px;
-
-    display: flex;
     flex-direction: column;
-
-    gap: 18px;
-}
-
-.beneficios p {
-
-    display: flex;
-    align-items: center;
-
-    gap: 10px;
-}
-
-.beneficios i {
-    color: #22C55E;
-}
-
-/* ==================================================
-   ESTRUTURA
-================================================== */
-
-.estrutura {
-
-    padding: 80px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 60px;
-}
-
-.salas {
-
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 30px;
-}
-
-.modalidades {
-
-    width: 320px;
-
-    overflow: hidden;
-
-    border-radius: 20px;
-
-    background: var(--bg-card);
-
-    border: 1px solid var(--border-primary);
-
-    transition: var(--transition);
-}
-
-.modalidades:hover {
-
-    transform: translateY(-8px);
-
-    box-shadow: var(--shadow-primary);
-}
-
-.modalidades img {
-
-    height: 220px;
-
-    object-fit: cover;
-}
-
-.modalidades p {
-
+    margin-top: 50px;
     padding: 20px;
+    gap: 90px;
+}
 
-    text-align: center;
+/* ==================================================
+   Sessao Sobre
+================================================== */
 
-    color: white;
-    font-weight: bold;
+.section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    margin: 40px 0;
+
+}
+
+.about img {
+    width: 50%;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.about-us img {
+    width: 50%;
+}
+
+.about-us div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
 }
 
 /* ==================================================
@@ -531,41 +314,4 @@ footer p {
 
     text-align: center;
     font-size: 0.95rem;
-}
-
-/* ==================================================
-   RESPONSIVIDADE
-================================================== */
-
-@media (max-width: 768px) {
-
-    h2 {
-        font-size: 1.7rem;
-    }
-
-    .card-plano {
-        width: 100%;
-    }
-
-    .modalidades {
-        width: 100%;
-    }
-
-    .infos-extras {
-
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .aside-categories {
-        width: 55vw;
-    }
-
-    /* .banner_desktop {
-        display: none;
-    }
-
-    .banner_mobile {
-        display: block;
-    } */
 }
