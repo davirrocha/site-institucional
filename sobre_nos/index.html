@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Sobre Nós | Eh Fit Academia</title>
+
+    <meta name="description"
+        content="Conheça a história da Eh Fit Academia, nossa missão, estrutura e compromisso com a sua saúde e bem-estar.">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Estilos CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Sobre nós</title>
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header class="header-container">
 
-        <a href="../index.html">
-            <img src="../assets/logo_ehFit.png" class="logo-academia">
+        <a href="../index.html" aria-label="Página inicial">
+            <img src="../assets/logo_ehFit.png" alt="Logo da academia Eh Fit" class="logo-academia">
         </a>
 
         <button class="btn-menu" type="button" aria-label="Abrir menu">
@@ -30,43 +35,102 @@
 
     </header>
 
-    <!-- ICONE WHATSAPP -->
-    <a href="#" class="whatsapp">
+    <!-- BOTÃO WHATSAPP -->
+    <a href="#" class="whatsapp" aria-label="Entrar em contato pelo WhatsApp">
+
         <i class="fa-brands fa-whatsapp"></i>
+
     </a>
 
     <main>
+
         <!-- MENU LATERAL -->
         <aside class="aside-categories">
-            <ul>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="#">Central de ajuda</a></li>
 
-            </ul>
+            <nav aria-label="Menu lateral">
+
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            Sobre nós
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../sac/index.html">
+                            Central de ajuda
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
         </aside>
 
-        <section class="section about">
-            <img src="../assets/imagem_recepcao_ehFit.png" alt="Imagem da recepção da academia">
-            <div>
-                <h2>Sobre a <span style="color: #073DAF;">Eh</span><span style="color: #9FA3A8">Fit</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt modi odit cumque
-                    possimus commodi, impedit iure consequatur quam ipsa, dolorem sapiente suscipit repellendus eos
-                    tenetur molestias est! Est, asperiores.</p>
-            </div>
+        <!-- BANNER -->
+        <section class="section-home">
+
+            <picture>
+
+                <source media="(max-width: 768px)" srcset="../assets/banner_about_mobile.png">
+
+                <img src="../assets/banner_about.png" alt="Banner institucional da Eh Fit Academia">
+
+            </picture>
+
         </section>
 
-        <section class="section about-us">
-            <div>
-                <h2>Quem somos nós</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt modi odit cumque
-                    possimus commodi, impedit iure consequatur quam ipsa, dolorem sapiente suscipit repellendus eos
-                    tenetur molestias est! Est, asperiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Unde magnam dolor rerum, velit totam minus nesciunt facilis quisquam ullam nostrum culpa eum minima,
-                    veniam qui dolorum in asperiores officiis omnis?</p>
-            </div>
+        <!-- SOBRE A EMPRESA -->
+        <section class="section-descriptions">
 
-            <img src="../assets/imagem_externa_ehFit.png" alt="">
+            <section class="section about">
+
+                <img src="../assets/imagem_recepcao_ehFit.png" alt="Recepção da academia Eh Fit" loading="lazy">
+
+                <div>
+
+                    <h2>
+                        Sobre a
+                        <span class="logo-eh">Eh</span>
+                        <span class="logo-fit">Fit</span>
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur nesciunt modi odit cumque possimus commodi,
+                        impedit iure consequatur quam ipsa.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="section about-us">
+
+                <div>
+
+                    <h2>Quem Somos</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur nesciunt modi odit cumque possimus commodi,
+                        impedit iure consequatur quam ipsa.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde magnam dolor rerum, velit totam minus nesciunt
+                        facilis quisquam ullam nostrum culpa eum minima.
+                    </p>
+
+                </div>
+
+                <img src="../assets/imagem_externa_ehFit.png" alt="Fachada da academia Eh Fit" loading="lazy">
+
+            </section>
+
         </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -74,30 +138,36 @@
 
         <div class="infos-extras">
 
-            <img src="../assets/logo_ehFit.png" alt="Logo da academia">
+            <img src="../assets/logo_ehFit.png" alt="Logo da academia Eh Fit">
 
             <div class="redes">
 
-                <a href="#">
+                <a href="#" aria-label="Instagram da Eh Fit">
+
                     <i class="fa-brands fa-instagram"></i>
+
                 </a>
 
-                <a href="#">
+                <a href="#" aria-label="Facebook da Eh Fit">
+
                     <i class="fa-brands fa-facebook"></i>
+
                 </a>
 
-                <a href="#">
+                <a href="#" aria-label="TikTok da Eh Fit">
+
                     <i class="fa-brands fa-tiktok"></i>
+
                 </a>
 
             </div>
 
-            <div class="outros-links">
+            <nav class="outros-links" aria-label="Links do rodapé">
 
-                <a href="#">Sobre nós</a>
-                <a href="#">SAC</a>
+                <a href="../sobre_nos/index.html">Sobre nós</a>
+                <a href="../sac/index.html">SAC</a>
 
-            </div>
+            </nav>
 
         </div>
 
@@ -111,6 +181,7 @@
     </footer>
 
     <script src="../menu-lateral.js"></script>
+
 </body>
 
 </html>
