@@ -1,0 +1,171 @@
+/* ==================================================
+   TÍTULO
+================================================== */
+
+.container-titulo {
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.container-titulo h1 {
+    position: relative;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container-titulo h1::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.25rem;
+    margin: 0.75rem auto 0;
+    border-radius: 999px;
+    background: var(--gradient-primary);
+}
+
+
+/* ==================================================
+   INFORMAÇÕES DA UNIDADE
+================================================== */
+
+.section-infos-unidade {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section-infos-unidade img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   CONTEÚDO DAS INFORMAÇÕES
+================================================== */
+
+.infos-unidades {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.infos-unidades span {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.infos-unidades p {
+    line-height: 30px;
+    color: var(--text-primary);
+}
+
+.btn-unidade {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+.btn-planos,
+.btn-whatsapp {
+    flex: 1;
+    min-width: 180px;
+
+    padding: 0.95rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.btn-planos {
+    background: var(--gradient-primary);
+}
+
+.btn-whatsapp {
+    background: #25D366;
+}
+
+
+/* ==================================================
+   ESTADOS DOS BOTÕES
+================================================== */
+
+.btn-planos:hover,
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-planos:active,
+.btn-whatsapp:active {
+    transform: translateY(0);
+}
+
+.btn-planos:focus-visible,
+.btn-whatsapp:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (min-width: 768px) {
+    .section-infos-unidade {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .infos-unidades {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .section-infos-unidade img {
+        flex: 1;
+        max-width: 32rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-unidade {
+        flex-direction: column;
+    }
+
+    .btn-planos,
+    .btn-whatsapp {
+        width: 100%;
+    }
+}

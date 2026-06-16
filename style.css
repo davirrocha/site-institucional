@@ -62,8 +62,12 @@ a {
     text-decoration: none;
 }
 
+h1,
 h2 {
     color: var(--text-primary);
+}
+
+h2 {
     font-size: 2rem;
     text-align: center;
 }
@@ -216,7 +220,7 @@ li {
 
 .whatsapp {
 
-       width: 60px;
+    width: 60px;
     height: 60px;
     position: fixed;
     right: 25px;

@@ -1,0 +1,207 @@
+/* ==================================================
+   ROOT
+================================================== */
+
+:root {
+    /* Backgrounds */
+    --bg-primary: #111318;
+    --bg-secondary: #1B1F27;
+    --bg-card: #252A33;
+
+    /* Cores principais */
+    --color-primary: #3B82F6;
+    --color-primary-light: #60A5FA;
+
+    /* Textos */
+    --text-primary: #F5F7FA;
+    --text-secondary: #B6BECC;
+
+    /* Bordas */
+    --border-primary: #363D49;
+
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg,
+            #2563EB,
+            #3B82F6,
+            #60A5FA);
+
+    /* Sombras */
+    --shadow-primary: 0 10px 30px rgba(59, 130, 246, 0.15);
+    --shadow-hover: 0 15px 35px rgba(59, 130, 246, 0.25);
+
+    /* Transições */
+    --transition: all 0.3s ease;
+}
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==================================================
+   TÍTULO
+================================================== */
+
+.container-titulo {
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.container-titulo h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    position: relative;
+    font-weight: 700;
+}
+
+.container-titulo h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 999px;
+    background: var(--gradient-primary);
+}
+
+/* ==================================================
+   CONTAINER DAS UNIDADES
+================================================== */
+
+.container-unidades {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 25px 50px;
+}
+
+/* ==================================================
+   CARDS DAS UNIDADES
+================================================== */
+
+.unidades {
+    width: 100%;
+    max-width: 320px;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    gap: 1.5rem;
+    padding: 2rem;
+    border: 1px solid var(--border-primary);
+    border-radius: 24px;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow-primary);
+    transition: var(--transition);
+}
+
+.unidades:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+
+}
+
+/* ==================================================
+   IMAGEM
+================================================== */
+
+.unidades img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ==================================================
+   TEXTOS
+================================================== */
+
+.unidades h4 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+}
+
+.unidades p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* ==================================================
+   BOTÃO
+================================================== */
+
+.unidades a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 180px;
+
+    padding: 12px 20px;
+
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+
+    background: var(--gradient-primary);
+
+    border-radius: 14px;
+
+    transition: var(--transition);
+}
+
+.unidades a:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 768px) {
+    .container-unidades {
+        gap: 1.5rem;
+        padding: 0 20px 40px;
+    }
+
+    .unidades {
+        max-width: 100%;
+    }
+
+    .container-titulo h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-titulo {
+        padding: 30px 20px;
+    }
+
+    .unidades {
+        padding: 1.5rem;
+    }
+
+    .unidades h4 {
+        font-size: 1.2rem;
+    }
+}
