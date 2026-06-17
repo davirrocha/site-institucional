@@ -26,8 +26,8 @@
             #60A5FA);
 
     /* Sombras */
-    --shadow-primary: 0 10px 30px rgba(59, 130, 246, 0.15);
-    --shadow-hover: 0 15px 35px rgba(59, 130, 246, 0.25);
+    --shadow-primary: 0 10px 30px rgba(59, 130, 246, 0.1);
+    --shadow-hover: 0 15px 35px rgba(59, 130, 246, 0.1);
 
     /* Transições */
     --transition: all 0.3s ease;

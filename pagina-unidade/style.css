@@ -1,4 +1,35 @@
 /* ==================================================
+   ROOT
+================================================== */
+
+:root {
+
+    --bg-primary: #111318;
+    --bg-secondary: #1B1F27;
+    --bg-card: #252A33;
+
+    --color-primary: #3B82F6;
+    --color-primary-light: #2563EB;
+
+    --text-primary: #F5F7FA;
+    --text-secondary: #B6BECC;
+
+    --border-primary: #363D49;
+
+    --gradient-primary:
+        linear-gradient(135deg,
+            #2563EB,
+            #3B82F6,
+            #60A5FA);
+
+    --shadow-primary:
+        0 0 25px rgba(59, 130, 246, 0.1);
+
+    --transition:
+        0.3s ease;
+}
+
+/* ==================================================
    TÍTULO
 ================================================== */
 
@@ -144,13 +175,18 @@
 
 @media (min-width: 768px) {
     .section-infos-unidade {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
+        border: 1px solid var(--border-primary);
+        border-radius: 35px;
+        background-color: var(--bg-card);
+        box-shadow: var(--shadow-primary);
     }
 
     .infos-unidades {
-        flex-direction: row;
+        flex-direction: column;
         flex: 1;
+        align-items: start;
     }
 
     .section-infos-unidade img {
