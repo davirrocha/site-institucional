@@ -1,42 +1,4 @@
 /* ==================================================
-   FAQ / SAC
-================================================== */
-
-:root {
-
-    --bg-primary: #111318;
-    --bg-secondary: #1B1F27;
-    --bg-card: #252A33;
-
-    --color-primary: #3B82F6;
-    --color-primary-light: #2563EB;
-
-    --text-primary: #F5F7FA;
-    --text-secondary: #B6BECC;
-
-    --border-primary: #363D49;
-
-    --gradient-primary:
-        linear-gradient(135deg,
-            #2563EB,
-            #3B82F6,
-            #60A5FA);
-
-    --shadow-primary:
-        0 0 25px rgba(59, 130, 246, 0.2);
-
-    --transition: 0.3s ease;
-}
-
-/* ==================================================
-   BODY
-================================================== */
-
-body {
-    background: var(--bg-primary);
-}
-
-/* ==================================================
    TÍTULO
 ================================================== */
 
