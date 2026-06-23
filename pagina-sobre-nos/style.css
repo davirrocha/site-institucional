@@ -113,6 +113,19 @@ main {
     align-items: flex-start;
 }
 
+.about-us a {
+
+    color: var(--color-primary-light);
+
+    transition: var(--transition);
+}
+
+.about-us a:hover {
+    color: white;
+}
+
+
+
 
 /* ==================================================
    RESPONSIVIDADE
