@@ -242,12 +242,6 @@
         width: 100%;
     }
 
-    .infos-extras {
-
-        flex-direction: column;
-        text-align: center;
-    }
-
     .aside-categories {
         width: 55vw;
     }

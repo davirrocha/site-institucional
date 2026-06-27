@@ -250,13 +250,13 @@ footer {
 }
 
 .infos-extras {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 40px;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer img {
@@ -327,4 +327,11 @@ footer p {
 
     text-align: center;
     font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .infos-extras {
+        flex-direction: row;
+        text-align: left;
+    }
 }
