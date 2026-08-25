@@ -100,6 +100,17 @@
     font-size: 23px;
 }
 
+.link-endereco {
+    color: var(--text-primary);
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 11px;
+}
+
+.link-endereco:hover {
+    color: var(--color-primary);
+}
+
 .infos-unidades p {
     line-height: 30px;
     color: var(--text-primary);
