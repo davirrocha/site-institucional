@@ -116,8 +116,8 @@
    BOTÕES
 ================================================== */
 
-.btn-planos,
-.btn-whatsapp {
+.link-planos,
+.link-whatsapp {
     flex: 1;
     min-width: 180px;
 
@@ -138,11 +138,11 @@
         opacity 0.3s ease;
 }
 
-.btn-planos {
+.link-planos {
     background: var(--gradient-primary);
 }
 
-.btn-whatsapp {
+.link-whatsapp {
     background: #25D366;
 }
 
@@ -151,19 +151,19 @@
    ESTADOS DOS BOTÕES
 ================================================== */
 
-.btn-planos:hover,
-.btn-whatsapp:hover {
+.link-planos:hover,
+.link-whatsapp:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.btn-planos:active,
-.btn-whatsapp:active {
+.link-planos:active,
+.link-whatsapp:active {
     transform: translateY(0);
 }
 
-.btn-planos:focus-visible,
-.btn-whatsapp:focus-visible {
+.link-planos:focus-visible,
+.link-whatsapp:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
 }
@@ -200,8 +200,8 @@
         flex-direction: column;
     }
 
-    .btn-planos,
-    .btn-whatsapp {
+    .link-planos,
+    .link-whatsapp {
         width: 100%;
     }
 }

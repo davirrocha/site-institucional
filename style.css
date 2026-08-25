@@ -68,15 +68,10 @@
     position: absolute;
     top: -18px;
     left: 50%;
-
     transform: translateX(-50%);
-
-    padding: 10px 30px;
-
+    padding: 15px 22px;
     border-radius: 999px;
-
     background: var(--gradient-primary);
-
     color: white;
     font-weight: bold;
 }
@@ -107,28 +102,24 @@
     text-align: center;
 }
 
-.btn-contratar {
+.link-contratar {
 
     width: 100%;
-
     margin-top: 30px;
     padding: 15px;
-
     border: none;
     border-radius: 999px;
-
     background: var(--gradient-primary);
-
     color: white;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-contratar:hover {
+.link-contratar:hover {
 
     transform: scale(1.03);
 
